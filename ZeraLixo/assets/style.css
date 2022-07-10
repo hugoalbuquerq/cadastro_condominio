@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #BC6C25;
+}
+
+.container {
+    width: 35%;
+    height: 45vh;
+    display: flex;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .212);
+    border-radius: 10px;
+}
+
+.form {
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.formheader {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+
+.inputbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+}
+
+.input .btn input{
+    border-radius: 2px;
+    border: none;
+    background-color: #F5F5F5;
+    padding: 10px;
+    width: 130px;
+    margin-left: 20px;
+}
+
+.input .inp input{
+    border-radius: 2px;
+    border: none;
+    background-color: #F5F5F5;
+    padding: 10px;
+    width: 100px;
+}
+
+.inputbox input{
+    border-radius: 2px;
+    border: none;
+    background-color: #F5F5F5;
+    padding: 10px;
+    width: 250px;
+}
+
+.inputbx{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.inputbx .btn input{
+    border-radius: 2px;
+    border: none;
+    background-color: #F5F5F5;
+    padding: 10px;
+    width: 130px;
+    margin-right: 20px;
+}
+
+.inputbx .inp input {
+    border-radius: 2px;
+    border: none;
+    background-color: #F5F5F5;
+    padding: 10px;
+    width: 100px;
+}
+
+
+/*botão*/
+.cadastro-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+
+.cadastro-button button {
+    background-color: #007AFF;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 54%;
+}
+
+.cadastro-button button:hover{
+    background-color: #0769d3;
+}
+
+.cadastro-button button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1330px) {
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    
+    .inputgroup {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        max-height: 10rem;
+        padding-right: 5rem;
+    }
+
+}
